@@ -1,0 +1,16 @@
+✝️: Ejercicio #2 
+
+def letra_DNI(DNI):
+    letras = "TRWAGMYFPDXBNJZSQVHLCKE"
+    residuo = DNI % 23
+    letra = letras[residuo]
+    return letra
+
+def main():
+    print("Este programa te la da letra de tu DNI") 
+    DNI = int(input("Introduce el número de tu DNI : "))
+    letra = letra_DNI(DNI)
+    print(f"La letra del DNI {DNI} es: {letra}")
+
+if __name__ == "__main__":
+    main()
